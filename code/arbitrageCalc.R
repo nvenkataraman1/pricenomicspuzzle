@@ -1,3 +1,3 @@
 
 ## Identity matrix
-diag(dim(ratematrix)[1])
+#diag(dim(ratematrix)[1])
