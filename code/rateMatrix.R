@@ -21,3 +21,4 @@ rateframe <- data.frame(fromcurr,tocurr,rates)
 ## Reshaping currency data into matrix form for operations
 mfxdata <- melt(rateframe,id.vars=c("fromcurr","tocurr"))
 ratematrix <- acast(mfxdata,fromcurr ~ tocurr)
+currCodes <- colnames(ratematrix)
