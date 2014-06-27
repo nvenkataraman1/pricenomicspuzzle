@@ -1,13 +1,16 @@
-pricenomicspuzzle
+Solution for the Priceonomics Currency Arbitrage puzzle
+link: http://priceonomics.com/jobs/puzzle/
 =================
 
 1. Run the code in arbitrageCalc.R
 
-2. It prints a filtered dataframe with currency sequences 
+2. Output is a filtered list with currency sequences and positive arbitrage values
+ 
+3. Output Format
+X1 | X2 | X3 | X4 | X5 | Value | Gain
 
-X1 > X2 > X3 > X4 > X5 > Value > Gain
+where
 
-where:
-a) X1 > X2 > X3 > X4 > X4 > X5 is the arbitrage sequence
-b) Value is the arbitrage value gain
-c) Gain is the percentage gain
+    * X1 | X2 | X3 | X4 | X4 | X5 is the currency flow sequence
+    * Value is the arbitrage value gain
+    * Gain is the percentage gain
