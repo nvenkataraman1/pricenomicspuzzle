@@ -25,6 +25,6 @@ ratePick <- function(fromCurr=NULL, toCurr=NULL) {
 ## 5. conversionValue(,t,c) - when requesting vector for inverse exchange values and amt > 1
 
 
-conversionValue <- function(fromCurr=NULL, toCurr=NULL) {
-    ratePick(fromCurr,toCurr)
+conversionValue <- function(fromCurr=NULL, toCurr=NULL,convAmt=1) {
+    convAmt * ratePick(fromCurr,toCurr)
 }
