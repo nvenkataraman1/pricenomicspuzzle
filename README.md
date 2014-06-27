@@ -11,6 +11,6 @@ X1 | X2 | X3 | X4 | X5 | Value | Gain
 
 where
 
-    * X1 | X2 | X3 | X4 | X4 | X5 is the currency flow sequence
+    * X1 | X2 | X3 | X4 | X5 is the currency flow sequence
     * Value is the arbitrage value gain
     * Gain is the percentage gain
