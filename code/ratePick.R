@@ -2,10 +2,6 @@ source("./rateMatrix.R")
 
 ratePick <- function(fromCurr=NULL, toCurr=NULL) {
     
-    #print(fromCurr)
-    #print(toCurr)
-    #print(ratematrix[fromCurr,toCurr])
-    
     if(!is.null(toCurr) && !is.null(fromCurr)) {
         ## to return a specific exchange rate
         ratematrix[fromCurr,toCurr]
@@ -29,8 +25,6 @@ ratePick <- function(fromCurr=NULL, toCurr=NULL) {
 ## 5. conversionValue(,t,c) - when requesting vector for inverse exchange values and amt > 1
 
 
-conversionValue <- function(fromCurr=NULL, toCurr=NULL,convValue=1) {
-    convValue * ratePick(fromCurr,toCurr)
-    #print(a)
-    #a
+conversionValue <- function(fromCurr=NULL, toCurr=NULL) {
+    ratePick(fromCurr,toCurr)
 }
