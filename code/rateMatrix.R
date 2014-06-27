@@ -21,3 +21,9 @@ rateframe <- data.frame(fromcurr,tocurr,rates)
 ## Reshaping currency data into matrix form for operations
 mfxdata <- melt(rateframe,id.vars=c("fromcurr","tocurr"))
 ratematrix <- acast(mfxdata,fromcurr ~ tocurr)
+
+## Setting up Currency Combos
+
+currencyCombo <- as.data.frame(c(rateframe[,-3]))
+
+#currencyCombo %>% filter(fromcurr == "USD",tocurr != "USD") %>% select(tocurr)
