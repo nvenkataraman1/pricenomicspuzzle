@@ -20,7 +20,7 @@ rate_sequence <- rate_sequence[2:dim(rate_sequence)[1],]
 
 #print(rate_sequence)
 
-startAmt <- 1 ## starting amount in base currency
+startAmt <- 100 ## starting amount in base currency
 
 for(i in 1:dim(rate_sequence)[1]) {
     
