@@ -7,10 +7,10 @@ link: http://priceonomics.com/jobs/puzzle/
 2. Output is a filtered list with currency sequences and positive arbitrage values
  
 3. Output Format
-X1 | X2 | X3 | X4 | X5 | Value | Gain
+C1 | C2 | C3 | C4 | C5 | ValueGain | PercentGain
 
 where
 
-    * X1 | X2 | X3 | X4 | X5 is the currency flow sequence
-    * Value is the arbitrage value gain
-    * Gain is the percentage gain
+    * C1 | C2 | C3 | C4 | C5 is the currency flow sequence
+    * ValueGain is the arbitrage value gain in base currency
+    * PercentGain is the percentage gain
