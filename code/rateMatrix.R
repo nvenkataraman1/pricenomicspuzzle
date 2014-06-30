@@ -5,6 +5,9 @@ require(reshape2)
 ## Read into dataframe
 fxdata <- as.data.frame(fromJSON("http://fx.priceonomics.com/v1/rates/"))
 
+#print(fxdata)
+
+
 ## Separate currency labels
 fromcurr <- substr(names(fxdata),1,3)
 tocurr <- substr(names(fxdata),5,7)
@@ -22,3 +25,4 @@ rateframe <- data.frame(fromcurr,tocurr,rates)
 mfxdata <- melt(rateframe,id.vars=c("fromcurr","tocurr"))
 ratematrix <- acast(mfxdata,fromcurr ~ tocurr)
 currCodes <- colnames(ratematrix)
+#print(currCodes)

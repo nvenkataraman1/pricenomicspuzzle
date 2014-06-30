@@ -1,8 +1,8 @@
 source("./rateMatrix.R")
 
-ratePick <- function(fromCurr=0, toCurr=0) {
+ratePick <- function(fromCurr = 0, toCurr = 0) {
     
-    if(fromCurr==0 || toCurr==0) {
+    if(fromCurr == 0 || toCurr == 0) {
         1
     }
     else {
