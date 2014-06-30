@@ -9,15 +9,11 @@ require(combinat)
 require(dplyr)
 
 rate_sequence <- arbitragePermCombos(currCodes)
-#print(rate_sequence)
-
 
 ## setting up a linear sequence flow of exchange rates
 ## appending base currency at the end
 
 rate_sequence <- rate_sequence[2:dim(rate_sequence)[1],]
-
-#print(rate_sequence)
 
 startAmt <- 1 ## starting amount in base currency
 
@@ -40,18 +36,12 @@ for(i in 1:dim(rate_sequence)[1]) {
     multValue <- 1
     
     for (j in (1:(zeroBound-1))) {
-        #print(paste("i:",i,"j:",j))
-        #print(paste("zerobound:",zeroBound))
-        #print(multValue)
         multValue <- multValue * conversionValue(rate_sequence[i,j],rate_sequence[i,j+1])
     }
-    #print(multValue)
     
     rate_sequence[i,"ValueGain"] <- round((startAmt * multValue),6) - startAmt
     
 }
-
-#print(rate_sequence)
 
 result <- rate_sequence %>% 
                 filter(ValueGain > 0) %>% 
