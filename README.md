@@ -1,5 +1,8 @@
-Solution for the Priceonomics Currency Arbitrage puzzle
+Solution for the Currency Arbitrage puzzle
 =================
+
+Problem Statement: Given an N-currency set, find all currency transfer combinations that result in a profit.
+link: http://priceonomics.com/jobs/puzzle/
 
 1. Run the code in arbitrageCalc.R by sourcing it
 
