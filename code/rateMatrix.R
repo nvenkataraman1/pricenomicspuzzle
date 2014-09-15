@@ -1,3 +1,4 @@
+require(httr)
 require(jsonlite)
 require(reshape2)
 

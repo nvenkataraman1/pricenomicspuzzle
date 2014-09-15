@@ -1,5 +1,4 @@
-if(!grep("code",getwd(),ignore.case=TRUE))
-    setwd(paste(getwd(),"code",sep="/"))
+#setwd(paste("~/gitrepos/pricenomicspuzzle/code",sep="/"))
 
 source("./ratePick.R")
 source("./arbitragePermCombos.R")
