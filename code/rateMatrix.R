@@ -17,7 +17,9 @@ tocurr <- substr(names(fxdata),5,7)
 tfxdata <- t(fxdata)
 
 ## Fetching rates from transposed matrix in from-to currency format
-rates <- as.numeric(t(fxdata)[1:dim(tfxdata)[1],1])
+#rates <- as.numeric(t(fxdata)[1:dim(tfxdata)[1],1])
+
+rates <- as.numeric(tfxdata[,1])
 
 ## Combining currency and rates into a dataframe
 rateframe <- data.frame(fromcurr,tocurr,rates)
